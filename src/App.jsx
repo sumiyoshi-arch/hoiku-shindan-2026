@@ -56,7 +56,7 @@ festival: 0,
 rocket: 0,
 };
 
-```
+
 questions.forEach((q) => {
   scores[q.type] += answers[q.id] || 0;
 });
@@ -79,7 +79,7 @@ setResult({
   sub,
   copy,
 });
-```
+
 
 };
 
@@ -93,7 +93,7 @@ fontFamily: 'sans-serif',
 }}
 > <h1>園風タイプ診断</h1>
 
-```
+
   {questions.map((q) => (
     <div
       key={q.id}
