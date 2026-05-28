@@ -1,28 +1,96 @@
 import React, { useState } from 'react';
 
 export default function App() {
-const questions = [
-{
-id: 1,
-text: '子どもの「やりたい」を大切にしている',
-type: 'forest',
-},
-{
-id: 2,
-text: '安心感や関係性を大切にしている',
-type: 'hidamari',
-},
-{
-id: 3,
-text: '行事やみんなで作る活動を大切にしている',
-type: 'festival',
-},
-{
-id: 4,
-text: '新しい挑戦や工夫を大切にしている',
-type: 'rocket',
-},
-];
+  const questions = [
+    // 森のたんけん型
+    {
+    id: 1,
+    text: '子どもの「やりたい」を大切にしている',
+    type: 'forest',
+    },
+    {
+    id: 2,
+    text: '自由遊びの時間を重視している',
+    type: 'forest',
+    },
+    {
+    id: 3,
+    text: '保育者は見守る役割を大切にしている',
+    type: 'forest',
+    },
+    {
+    id: 4,
+    text: '自然や探索活動を積極的に取り入れている',
+    type: 'forest',
+    },
+    
+    // ひだまり型
+    {
+    id: 5,
+    text: '安心できる雰囲気づくりを大切にしている',
+    type: 'hidamari',
+    },
+    {
+    id: 6,
+    text: '子どもとの信頼関係を重視している',
+    type: 'hidamari',
+    },
+    {
+    id: 7,
+    text: '保護者との丁寧な関わりを大切にしている',
+    type: 'hidamari',
+    },
+    {
+    id: 8,
+    text: '落ち着いた生活リズムを意識している',
+    type: 'hidamari',
+    },
+    
+    // おまつり職人型
+    {
+    id: 9,
+    text: '行事をみんなで作り上げる文化がある',
+    type: 'festival',
+    },
+    {
+    id: 10,
+    text: 'チームワークを大切にしている',
+    type: 'festival',
+    },
+    {
+    id: 11,
+    text: '園全体で一体感を感じることが多い',
+    type: 'festival',
+    },
+    {
+    id: 12,
+    text: 'みんなで達成感を味わう活動が多い',
+    type: 'festival',
+    },
+    
+    // ロケット挑戦型
+    {
+    id: 13,
+    text: '新しい保育を積極的に試している',
+    type: 'rocket',
+    },
+    {
+    id: 14,
+    text: 'ICTや新しいツール導入に前向き',
+    type: 'rocket',
+    },
+    {
+    id: 15,
+    text: '失敗より挑戦を大切にしている',
+    type: 'rocket',
+    },
+    {
+    id: 16,
+    text: '園内で改善提案が出やすい',
+    type: 'rocket',
+    },
+    ];
+    
 
 const typeNames = {
 forest: '🌳 森のたんけん型',
